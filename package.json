@@ -4,6 +4,9 @@
   "description": "Blog project in JavaScript",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,8 +20,10 @@
   ],
   "author": "aktm",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aktm1982/blog_project/issues"
-  },
-  "homepage": "https://github.com/aktm1982/blog_project#readme"
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
 }

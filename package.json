@@ -1,0 +1,24 @@
+{
+  "name": "blog_project",
+  "version": "1.0.0",
+  "description": "Blog project in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aktm1982/blog_project.git"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "blog"
+  ],
+  "author": "aktm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aktm1982/blog_project/issues"
+  },
+  "homepage": "https://github.com/aktm1982/blog_project#readme"
+}

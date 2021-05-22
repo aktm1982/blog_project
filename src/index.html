@@ -5,11 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Project</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <h1 class="header">Блог проект</h1>
-        <button class="link-btn">Открыть</button>
+    <div class="front" id="front">
+        <h1 class="front-title">Блог на Javascript</h1>
+        <button class="start-control">Войти</button>
+    </div>
+    <div class="container" id="container">
+        <ul class="nav" id="nav">
+            <li><a href="#" class="nav__item nav__item_active" data-component="posts">Статьи</a></li>
+            <li><a href="#" class="nav__item" data-component="create">Добавить</a></li>
+            <li><a href="#" class="nav__item" data-component="favorites">Избранное</a></li>
+        </ul>
+        <div class="main">
+            <div class="loader" id="loader"></div>
+            <div id="posts" class="post main__item"></div>
+            <div id="create" class="create main__item hidden">
+                <h2 class="post-header">Добавить новую статью</h2>
+                <form action="#" class="form" name="create-form">
+                    <div class="form__input">
+                        <label for="post-title" class="label">Название</label> 
+                        <input type="text" class="input" name="post-title" placeholder="Название статьи">
+                        <label for="post-content" class="label">Статья</label> 
+                        <textarea class="input" name="post-content" rows="10" placeholder="Текст статьи (минимум 6 символов)"></textarea>
+                        <label for="post-type" class="label">Вид статьи</label> 
+                        <select class="input" name="post-type">
+                            <option value="post">Статья</option>
+                            <option value="news">Новость</option>
+                            <option value="advert">Объявление</option>
+                        </select>
+                    </div>
+                    <input type="submit" class="submit" value="Сохранить"></submit>
+                </form>
+            </div>
+            <div id="favorites" class="favorites main__item hidden"></div>
+        </div>
     </div>
 </body>
 </html>
